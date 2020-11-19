@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="progress_time">00 : 00</string>
+
+    <string name="channel_id">music_player_channel_id</string>
+    <string name="channel_name">Music Player Channel</string>
+</resources>

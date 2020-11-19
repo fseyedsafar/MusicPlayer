@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.musicplayer.controller.fragment.SheetBottomFragment">
+
+    <LinearLayout
+        android:id="@+id/coordinator_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="#000000"
+        android:foregroundGravity="bottom"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <!--        <SeekBar-->
+        <!--            android:id="@+id/schema_seek_bar"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:saveEnabled="true" />-->
+
+        <LinearLayout
+            android:id="@+id/linear_bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:foregroundGravity="bottom"
+            android:orientation="vertical">
+            <!--            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/image_view_bottom"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/music_name_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#FFFF00" />
+
+                    <TextView
+                        android:id="@+id/music_artist_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#FFFF00" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/pause_play"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_pause_activity" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+    </LinearLayout>
+
+</FrameLayout>
