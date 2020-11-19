@@ -2,11 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.musicplayer">
 
-
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
 
     <application
         android:name=".MusicPlayerAppliation"
@@ -16,16 +14,20 @@
         android:roundIcon="@drawable/ic_play_activity"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".controller.activity.FileListActivity"></activity>
-        <activity android:name=".controller.activity.MusicFullPageActivity" />
         <activity
-            android:name=".controller.activity.MusicPagerActivity"
-            android:launchMode="singleTop">
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".controller.activity.FileListActivity" />
+        <activity android:name=".controller.activity.MusicFullPageActivity" />
+        <activity
+            android:name=".controller.activity.MusicPagerActivity"
+            android:launchMode="singleTop">
         </activity>
 
         <service android:name=".service.MusicService" />
