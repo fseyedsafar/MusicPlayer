@@ -1,5 +1,5 @@
 # MusicPlayer
-### Sample App For Managing Task
+### Sample App For PLay Music
 ### Images App
 <p float="left">
 <img src="https://user-images.githubusercontent.com/54942560/99698226-62956500-2a45-11eb-9119-d343d743939a.jpg"
@@ -13,10 +13,11 @@ width="200" height="350">
 </p>
 
 # Description
-#### This app is a sample for managing your tasks.
-The user can login or sign up and view a list of his tasks in three tabs with names Todo, Doing and Done.
-User can add, edit, delete, share his tasks and search among all of his tasks. 
-The administrator can logged in and view and manage the tasks of all users.
+#### This app is a sample for managing your music.
+- The user can play and stop music
+- He choice shuffle , repeat one and repeat all for any music 
+- If he leaves the program, he can still listen to music
 #### This app has features such as:
-- Using GreenDao library for DB
+- Using Service
+- Using Content Provider
 - Using MVC architecture
